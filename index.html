@@ -5,8 +5,339 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detrans</title>
+
+    <!-- BootStrap Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- Css File link -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
+
+  <!-- Font awesome cdn -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
   <body>
-    <h1>Hello</h1>
+    <!-- Header Start -->
+
+    <header class="container-fluid header">
+      <img
+        src="./assets/headerBackground.jpg"
+        class="header__background"
+        alt=""
+      />
+      <div class="top__bar d-flex justify-content-end">
+        <p>info@detrans.io</p>
+        <span>/</span>
+        <p>+91 99643 31200</p>
+      </div>
+
+      <nav class="navbar navbar-expand-lg nav__bar">
+        <div class="container d-flex justify-content-between">
+          <a class="navbar-brand" href="#"
+            ><img src="./assets/logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse nav__links__container"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav menu">
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button
+                    class="dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Service Vertical
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button
+                    class="dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Company
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button
+                    class="dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Resource
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button
+                    class="dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Carrers
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button><a>Get in touch</a></button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="header__body container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide header__slider"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p>we are here to help you successed</p>
+              <h2>Fast and well structured data and database solution</h2>
+              <button>Our capabilities</button>
+            </div>
+            <div class="carousel-item">
+              <p>we are here to help you successed</p>
+              <h2>Fast and well structured data and database solution</h2>
+              <button>Our capabilities</button>
+            </div>
+            <div class="carousel-item">
+              <p>we are here to help you successed</p>
+              <h2>Fast and well structured data and database solution</h2>
+              <button>Our capabilities</button>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev slider__arrows left"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+          <a
+            class="carousel-control-next slider__arrows right"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <div class="slider__arrows slider__count">
+            <p><span>2</span> - <span>4</span></p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- About Start -->
+    <section class="about__section container">
+      <div class="row about__row">
+        <div class="col-md-6 about__left">
+          <span class="background"></span>
+          <span class="blue"></span>
+          <span class="violet"></span>
+          <img
+            src="./assets/aboutfunImage.jpg"
+            class="fun__image"
+            alt="About image"
+          />
+          <img
+            src="./assets/aboutlaptop.jpg"
+            class="laptop__image"
+            alt="About image"
+          />
+        </div>
+
+        <div
+          class="col-md-6 about__right d-flex align-items-start justify-content-center flex-column"
+        >
+          <h2>We help you succeed by delivering premium software solutions.</h2>
+          <p>
+            A software development company providing premium software and
+            business solutions delivered with the world-class performance.
+            Execute core competencies so that as an end result, we make users
+            into advocates. Debugging is the process of removing software bugs,
+            then is the process of putting them in.
+          </p>
+          <a href="#">About company</a>
+        </div>
+      </div>
+    </section>
+    <!-- About end -->
+
+    <!-- What-We-Do Start -->
+
+    <div class="container what__we_do__container">
+      <div
+        class="heading__content d-flex align-items-center justify-content-center flex-column"
+      >
+        <p>What We Do</p>
+        <h2>Our team creates special solutions to solve your problems</h2>
+      </div>
+
+      <div class="row first__row">
+        <div class="first__content">
+          <h4>Cloud Adoption</h4>
+          <p>
+            Our experts create your premium mobile and web application, Testing
+            and Online Support.
+          </p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div class="second__content">
+          <img src="./assets/whatwedo_1.jpg" alt="laptop image" />
+          <div class="content">
+            <h4>Website Development</h4>
+            <p>
+              Our experts create your premium mobile and web application
+              providing UX, UI Design, Prototyping, Development, Testing and
+              Online Support.
+            </p>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row second__row">
+        <div class="content">
+          <h4>Website Development</h4>
+          <p>
+            Our experts create your premium mobile and web application providing
+            UX, UI Design, Prototyping, Development, Testing and Online Support.
+          </p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div class="content">
+          <h4>Website Development</h4>
+          <p>
+            Our experts create your premium mobile and web application providing
+            UX, UI Design, Prototyping, Development, Testing and Online Support.
+          </p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div class="content">
+          <h4>Website Development</h4>
+          <p>
+            Our experts create your premium mobile and web application providing
+            UX, UI Design, Prototyping, Development, Testing and Online Support.
+          </p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+    </div>
+    <!-- What-We-Do end -->
+
+    <!-- quality Start -->
+    <!-- quality end -->
+
+    <!-- digital outreach Start -->
+    <!-- digital outreach end -->
+
+    <!-- project mind Start -->
+    <!-- project mind end -->
+
+    <!-- footer Start -->
+    <!-- footer end -->
   </body>
+
+  <!-- Bootstrap Scripts -->
+
+  <script src="./js/script.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
 </html>
